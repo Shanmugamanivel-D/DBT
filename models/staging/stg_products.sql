@@ -1,3 +1,3 @@
 {{ config(materialized='table') }}
 
-select * from learning_db.task_schema.products
+select * from dbt_db.dbt_sd.products
