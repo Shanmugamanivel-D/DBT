@@ -19,17 +19,15 @@ models:
             tests:
                 - unique
                 - not_null
-version: 2
 
-models:
-  - name: stg_orders
-    description: "Staging model for the orders data."
-    columns:
-      - name: order_id
-        description: "Primary key for the order."
-      - name: customer_id
-        description: "ID of the customer placing the order."
-      - name: order_date
-        description: "Date when the order was placed."
-      - name: producr_id
-        description: "ID of the product placed by the customer."
+    - name: stg_orders
+      description: "Staging model for the orders data."
+      columns:
+           - name: order_id
+             description: "Primary key for the order."
+           - name: customer_id
+             description: "ID of the customer placing the order."
+           - name: order_date
+             description: "Date when the order was placed."
+           - name: producr_id
+             description: "ID of the product placed by the customer."
