@@ -1,0 +1,72 @@
+
+version: 2
+
+models:
+
+    - name: stg_orders
+      description: "Staging model for the orders data."
+      columns:
+           - name: orderid
+             description: "Primary key for the order."
+
+           - name: customerid
+             description: "ID of the customer placing the order."
+
+           - name: orderdate
+             description: "Date when the order was placed."
+
+           - name: productid
+             description: "ID of the product placed by the customer."
+
+
+
+    - name: stg_customers
+      description: "Staging model for the customers data."
+      columns:
+           - name: customerid
+             description: "ID of the customer buying products."
+
+           - name: segment
+             description: "The segments described (consumer, corporate, and home office) are broad groupings used in customer segmentation, a process of dividing customers into distinct groups based on shared characteristics."
+           
+           - name: country
+             description: "Nationality of the customer"
+
+           - name: state
+             description: "Specific region of the country where customer lives."
+
+
+
+    - name: stg_products
+      description: "Staging model for the products data."
+      columns:
+           - name: category
+             description: "It defines the products classification or type."
+
+           - name: productid
+             description: "ID of the products available for sales."
+
+           - name: productname
+             description: "Name of the product for the product ID"
+
+           - name: subcategory
+             description: "Subdivision or Subclass of the category is Subcategory."
+
+
+    - name: stg_marts
+      description: '{{  doc ("stg_marts") }}'
+      columns:
+           - name: orderid
+             description: '{{  doc ("orderid") }}'
+
+           - name: orderdate
+             description: '{{  doc ("orderdate") }}'
+
+           - name: shipdate
+             description: '{{  doc ("shipdate") }}'
+
+           - name: shipmode
+             description: '{{  doc ("shipmode") }}'
+
+           - name: order_profits
+             description: '{{  doc ("order_profits") }}'
