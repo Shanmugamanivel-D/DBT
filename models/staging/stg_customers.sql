@@ -1,3 +1,3 @@
 {{ config(materialized='table') }}
 
-select * from dbt_db.dbt_sd.customers
+select * from data_db.data_schema.customers
